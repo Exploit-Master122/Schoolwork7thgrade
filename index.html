@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Darrkon Link Dispenser v5</title>
+  <title>Darrkon Link Dispenser v4</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Exo+2:wght@300;400;600&display=swap" rel="stylesheet">
   <style>
     /* === GENERAL RESET & FONT === */
@@ -138,11 +138,11 @@
   <!-- Modal container -->
   <div class="modal-container">
     <div class="modal">
-      <h1>Proxy Dispenser</h1>
-      <p class="subtitle">Select a category and click "Open Link" to launch the site in a secure proxy.</p>
+      <h1>Darrkon Link Loader v4</h1>
+      <p class="subtitle">One of the best link dispensers,by Darrkon Network.</p>
 
       <!-- Category dropdown -->
-      <label for="category">Select Category:</label>
+      <label for="category">Select a link:</label>
       <select id="category">
         <option value="">Well,choose a proxy...</option>
         <option value="https://exploit-master122.github.io/DarrkonOS/">Darrkon</option>
@@ -155,29 +155,28 @@
         <option value="https://edgedcircles.com/uv/service/hvtrs8%2F-dcyfrgaox%2Cppo-">DayDreamX</option>
         <option value="https://au8eibi83bgvy7m1.www.zhkljffgh.nas64.de/">Shadow Browser</option>
         <option value="https://petezahgames.com/">PetezahGames</option>
-        <option value="https://terbiumon.top/">TerbiumOS</option>
-        <option value="https://example.com/nebula">Nebula (Cannot Be Cloaked)</option>
-        <option value="https://example.com/bolt">Bolt</option>
-        <option value="https://example.com/lunar">Lunar</option>
-        <option value="https://example.com/lunaar">Lunaar</option>
-        <option value="https://example.com/starlight">Starlight</option>
-        <option value="https://utopiaweb.org/">Utopia Education</option>
-        <option value="https://history.lodgegomantak.org/">KazWire</option>
-        <option value="https://app.edu.iownyour.org/">Space!</option>
-        <option value="https://glintapp.org/">Glint Browser</option>
-        <option value="https://chat.qwen.ai/">Qwen AI</option>
-        <option value="https://zticjpomub.eithermouse.com/">Selenite</option>
-        <option value="https://andrewnotgay.trustmi.cl/">Bolt</option>
-        <option value="https://edgedcircles.com/uv/service/hvtrs8%2F-dmcq.eomgne%2Ccmm-dmcwmgnv%2Ff%2F3BA-%5DDiqOclJFN0hSWUZAj%40-Ep%2FU0CTtxnpVMIR-oRt4-efiv%3Fva%60%3Dv.vufkm6k5gw1n">WAYYYYY More links (Ultraviolet)</option>
+        <option value="https://example.com/terbium">TerbiumOS</option>
+        <option value="https://nebulaservices.org/en_US/">Nebula (Cannot Be Cloaked)</option>
+        <option value="https://andrewnotgay.trustmi.cl/">BoltOS Browser</option>
+        <option value="https://lupine.red/">LupineVault</option>
+        <option value="https://app.flamepass.com/">Flamepass App</option>
+        <option value="https://3kh0v5.global.ssl.fastly.net/">3kh0 v5</option>
+        <option value="https://zxsgames.vip/">ZXS G@m3s</option>
+        <option value="https://z-proxy.github.io/Z-Kit/home.html">Z-Kit Proxy</option>
+        <option value="hallo,ich been snappy de cleine crocodile...">All of the stuff under this bar is more cloaked links!</option>
+        <option value="https://petezah.pages.dev/pages/skipschool">SkipSchool Proxies</option>
+        <option value="https://moonlight.on-to.space/">Sydney's Moonlight Dispenser v3</option>
+        <option value="https://edgedcircles.com/uv/service/hvtrs8%2F-dmcq.eomgne%2Ccmm-dmcwmgnv%2Ff%2F3BA-%5DDiqOclJFN0hSWUZAj%40-Ep%2FU0CTtxnpVMIR-oRt4-efiv%3Fva%60%3Dv.vufkm6k5gw1n">BuypassHub Links v8</option>
+        <option value="https://app.flamepass.com/ultimate-links.html">FlamePass HUGE List</option>
       </select>
 
       <!-- Open button -->
-      <button class="open-btn" onclick="openInProxy()">Open Link</button>
+      <button class="open-btn" onclick="openInProxy()">Launch</button>
     </div>
   </div>
 
   <footer>
-    <p>Powered by Proxy Dispenser | © 2023</p>
+    <p>Powered by Darrkon Network | Inspired by ThefakeSydney</p>
   </footer>
 
   <!-- Particles.js library -->
@@ -276,7 +275,7 @@
 
     // Function to open links in about:blank with iframe
     function openInProxy() {
-      const selectedUrl = document.getElementById('category').value;
+      const selectedUrl = document.getElementById('category').value.trim();
 
       if (!selectedUrl) {
         alert('Please select a category.');
@@ -310,7 +309,7 @@
                 e.returnValue = '';
                 return 'Leave site? Changes you made may not be saved.';
               };
-            </script>
+            <\/script>
           </head>
           <body>
             <iframe src="${selectedUrl}" sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-top-navigation"></iframe>
